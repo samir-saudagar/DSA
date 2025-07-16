@@ -49,6 +49,17 @@ public:
         }
         return current_node->is_end_of_word;
     }
+
+    void deleteTrie(TrieNode* node) {
+    for (int i = 0; i < 26; i++) {
+        if (node->children[i]) deleteTrie(node->children[i]);
+    }
+    delete node;
+    }
+
+    ~Trie() {
+        deleteTrie(root);
+    }
 };
 
 int main() {
