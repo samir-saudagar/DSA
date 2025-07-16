@@ -1,3 +1,12 @@
+
+// | Operation      | Time Complexity                    | Space Complexity |
+// | -------------- | ---------------------------------- | ---------------- |
+// | `insert()`     | `O(L)` per word / `O(n * L)` total | `O(n * L)`       |
+// | `search()`     | `O(L)`                             | `O(1)`           |
+// | `startsWith()` | `O(L)`                             | `O(1)`           |
+
+// n is no of words, L is maximum length of a word. 
+
 #include <iostream>
 using namespace std;
 
