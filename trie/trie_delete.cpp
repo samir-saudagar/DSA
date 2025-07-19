@@ -1,3 +1,7 @@
+//https://www.naukri.com/code360/problems/trie-delete-operation_1062663
+
+// n = number of words, m = length of word to be deleted
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -48,6 +52,6 @@ TrieNode* deleteWordHelper(TrieNode* node, string& word, int depth) {
     return node;
 }
 
-TrieNode* deleteWord(TrieNode* root, string word) {
+TrieNode* deleteWord(TrieNode* root, string word) { //Time Complexity: O(m), Space Complexity: O(m)
     return deleteWordHelper(root, word, 0);
 }
