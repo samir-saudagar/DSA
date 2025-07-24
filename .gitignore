@@ -1,0 +1,12 @@
+*.exe
+*.out
+*.o
+*.obj
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+
