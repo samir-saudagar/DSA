@@ -19,7 +19,7 @@ public:
         return bouquets_count;
     }
 
-    int minDays(vector<int>& arr, int m, int k) { // Time: O(n * log(max(arr))), Space: O(1)
+    int minDays(vector<int>& arr, int m, int k) { // Time: O(n * log(max(arr)) - log(min(arr))), Space: O(1)
         int ans = -1, n = arr.size();
         long long total_flower_required = 1LL * m * k;
         if (n < total_flower_required) return -1;
