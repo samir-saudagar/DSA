@@ -17,3 +17,6 @@ public:
 
 //Note: obervation:
 // The number of missing positive integers before the mid index is equal to arr[mid] - (mid + 1)
+// If the number of missing integers is greater than or equal to k, we need to search in the left half.
+// If the number of missing integers is less than k, we need to search in the right half.
+// Finally, the kth missing positive integer is at index i + k.
