@@ -20,3 +20,5 @@ public:
         return ans;
     }
 };
+
+// if they ask about how many time arry is rotated you can return index of minimum element

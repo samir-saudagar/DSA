@@ -1,5 +1,6 @@
 // https://www.geeksforgeeks.org/problems/aggressive-cows/1
 // n is size of arr, k is number of cows, m is the maximum distance between cows(arr[n - 1] - arr[0])
+// binary search on answer
 class Solution {
   public:
     bool is_possible(const vector<int>& arr, int k, int n, int mid) { // Time: O(n), Space: O(1)
@@ -13,11 +14,12 @@ class Solution {
             }
         }
     
-        if(placed_cow_count >= k) return true;
+        if(placed_cow_count >= k) return true; //maximize the minimum distance between cows
         return false;
     }
     
     int aggressiveCows(vector<int>& arr, int k) { // Time: O(n log m), Space: O(1)
+        if(k > arr.size()) return -1; // not enough stalls for cows
         int n = arr.size(), ans = -1;
         
         sort(arr.begin(), arr.end());
