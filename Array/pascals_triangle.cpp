@@ -1,4 +1,5 @@
-// https://leetcode.com/problems/pascals-triangle
+// https://leetcode.com/problems/pascals-triangle?envType=problem-list-v2&envId=array
+
 
 class Solution {
 public:
